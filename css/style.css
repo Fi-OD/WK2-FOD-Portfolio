@@ -24,13 +24,12 @@ p {
 }
 
 #profileIMG{
-
-  max-height: 100px;
+display:block;
+  max-height: 250px;
+  margin-left: 100px;
   align-content: flex-start;
   max-width: auto;
   filter: grayscale(100%);
-
-
 }
 
 /* Navigation*/
@@ -48,8 +47,8 @@ p {
   padding-left: 30px;
   padding-right: 30px;
   position: absolute;
-  top:20px;
-  left:100px
+  top:270px;
+  left:100px;
 }
 
 nav img {
