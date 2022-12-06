@@ -22,6 +22,17 @@ p {
   color: black;
   margin: 0;
 }
+
+#profileIMG{
+
+  max-height: 100px;
+  align-content: flex-start;
+  max-width: auto;
+  filter: grayscale(100%);
+
+
+}
+
 /* Navigation*/
 .NavBar{
   display: flex;
