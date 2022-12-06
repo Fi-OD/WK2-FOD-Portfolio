@@ -80,6 +80,13 @@ height: auto;
 
 }
 
+.hero-banner a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 /*Porfolio Hero Project*/
 
 #mainGrid {
@@ -96,6 +103,8 @@ height: auto;
 }
 
 .page-section{
+  background-image: center;
+  background-size: cover;
   background-color: rgb(153, 204, 0);
 }
 
@@ -146,7 +155,7 @@ height: auto;
  
 
 #project1{
-  grid: P1;
+  grid-area: P1;
   background-image: url("../images/02-portfolio-1.jpg");
 }
 
@@ -178,12 +187,5 @@ height: auto;
 padding:20px;
 text-align:left;
 color:black
-
 }
 
-
-#projects img {
-  display: block;
-  justify-content: flex-start;
-  width: 30%;
-}
