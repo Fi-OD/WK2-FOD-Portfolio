@@ -22,58 +22,158 @@ p {
   color: black;
   margin: 0;
 }
+/* Navigation*/
+.NavBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content:flex-end;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
+.NavBar h1{
+  background-color: rgb(153, 204, 0);
+  padding-left: 30px;
+  padding-right: 30px;
+  position: absolute;
+  top:20px;
+  left:100px
+}
 
-.container {
+nav img {
+  filter:grayscale(100%)
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.icons img{
+  margin: 10px;
+  max-width: 5%;
+height: auto;
+  cursor: pointer;
+}
+
+.hero-banner{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right:30px;
+  background-color: rgb(153, 204, 0);
+  margin:top 20px bottom 20px
+
+}
+
+/*Porfolio Hero Project*/
+
+#mainGrid {
   display:grid;
   row-gap: 20px;
   grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  grid-template-rows: 20px 20px 2fr 1fr fr;
+  grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
   grid-template-areas: 
-"l . . . ."
-"T T T . ."
-"A A A A ."
-"H H H H ."
-"P P P P ."
+
+". A A A ."
+". H H H ."
+". P P P ."
 ". C C C .";
 }
 
 .page-section{
   background-color: rgb(153, 204, 0);
-  padding-left: 100px;
-}
-
-#title{
-  grid-area: T;
- 
 }
 
 #about{
   grid-area: A;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   }
 
 #hero{
   grid-area: H;
+
+  background-image: url("../images/02-hero-bg.jpg");
+  border-bottom:15px solid rgb(153, 204, 0);
 }
 
-#hero img{
-  display:block;
-  width:60%
+#headline {
+  display: inline-block;
+  background-color: rgb(153, 204, 0,0.8);
+  padding:20px;
+  position:relative;
+  top: 250px;
+  left: 30px;
+  color: white;
 }
+
+/*Portfolio Additional projects*/
 
 #projects{
  grid-area: P;
+ display: grid;
+ border-bottom:15px solid rgb(153, 204, 0);
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-areas: 
+  " P1 P2 P3"
+ ;
 }
+
+#projects h2{
+  padding: 30px;
+  display:flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  z-index: 100;
+}
+ 
+
+#project1{
+  grid: P1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+
+#project2{
+  grid-area: P2;
+  background-image:  url("../images/02-portfolio-2.jpg");
+}
+
+#project3{
+  grid-area: P3;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.projectsGridArea{
+  background-image: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: flex-end;
+  min-height: 250px;
+}
+
+/* Contact me /footer*/
+
+#contact{
+  grid-area: C;
+padding:20px;
+text-align:left;
+color:black
+
+}
+
 
 #projects img {
   display: block;
   justify-content: flex-start;
   width: 30%;
-}
-
-#contact{
-  grid-area: C;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 100px;
 }
