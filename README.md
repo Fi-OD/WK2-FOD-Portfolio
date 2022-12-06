@@ -73,3 +73,41 @@ You are required to submit BOTH of the following for review:
 
 ---
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+# Fionnuala O'Donnell: Portfolio
+
+## Description
+A portfolio showcasing projects that highlight my skills as a Front-End Web developer.
+
+
+
+The following changes were made:
+* `div` tags replaced by semantic HTML 
+* All images and icons given `alt` attributes
+* HTML elements given a logical structure
+* CSS elements put into a sequential order
+
+## Usage 
+
+## Wire Frame
+The following image shows the wire frame for the portfolio.
+
+![The wire frame show the layouts of the portfolio on a webpage and mobile](/images/Fire-Frame.png)
+
+## Technology
+* HTML
+* CSS
+
+## Badges
+![GitHub last commit](https://img.shields.io/github/last-commit/Fi-OD/Wk1CH1?logo=GitHUB)
+
+## Authors
+
+Fionnuala O'Donnell - Github:[Fi-OD](https://github.com/Fi-OD)
+
+## License
+
+MIT License 
+
+## Link
+https://fi-od.github.io/WK2-FOD-Portfolio/
