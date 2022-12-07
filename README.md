@@ -6,9 +6,11 @@ A portfolio showcasing projects that highlight my skills as a Front-End Web deve
 ## Usage 
 
 ## Wire Frame
-The following image shows the wire frame for the portfolio.
+The following images shows the wire frame for the portfolio and the final layout.
 
 ![The wire frame show the layouts of the portfolio on a webpage and mobile](/images/Fire-Frame.png)
+
+![This screen grab shows the final layout of the webpage](/images/ScreenShot.png)
 
 ## Technology
 * HTML
