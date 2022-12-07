@@ -17,7 +17,8 @@ The following images shows the wire frame for the portfolio and the final layout
 * CSS
 
 ## Badges
-![GitHub last commit](https://img.shields.io/github/last-commit/Fi-OD/Wk1CH1?logo=GitHUB)
+![GitHub last commit](https://img.shields.io/github/last-commit/Fi-OD/WK2-FOD-Portfolio?logo=GitHUB)
+
 
 ## Authors
 
