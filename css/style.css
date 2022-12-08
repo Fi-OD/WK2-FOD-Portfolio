@@ -24,76 +24,18 @@ p {
 }
 
 
-#profileIMG {
-  display: block;
-  max-height: 250px;
-  margin-left: 100px;
-  align-content: flex-start;
-  max-width: auto;
-  filter: grayscale(100%);
-}
 
 /* Header*/
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: flex-end;
-  margin-left: 100px;
-  margin-right: 100px;
-}
 
-.header h1 {
-  background-color: rgb(153, 204, 0);
-  padding-left: 30px;
-  padding-right: 30px;
-  position: absolute;
-  top: 270px;
-  left: 100px;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.icons img {
-  margin: 10px;
-  max-width: 5%;
-  height: auto;
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-/* Navigation bar
-
-.navBar {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: rgb(153, 204, 0);
-  margin: top 20px bottom 20px
-}
-
-.navBar a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-  font-weight: bold;
-}*/
-
-/*Main Grid*/
 
 #mainGrid {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 1fr 350px 350px 350px 1fr;
-  grid-template-rows: 50px 0.5fr 2fr 1fr 0.5fr;
+  grid-template-rows: 250px 50px 50px 0.5fr 2fr 1fr 0.5fr;
   grid-template-areas:
+    ". Pr . I ."
+    ". Na . . ."  
     ". N N . ."
     ". A A A ."
     ". H H H ."
@@ -107,6 +49,48 @@ p {
   background-color: rgb(153, 204, 0);
 }
 
+#Profilepic{
+  grid-area: Pr;
+  contain: content;
+  display: block;
+  max-height: 250px;
+}
+
+#Profilepic Img{
+  max-height: 250px;
+  filter: grayscale(100%);
+}
+
+#name {
+  grid-area: Na;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#socialMediaIcons{
+  grid-area: I;
+  display: flex;
+  justify-content: baseline;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+#socialMediaIcons img{
+  padding: 10px;
+}
+
+#github{
+  height: 50px;
+  width:auto;
+}
+
+#linkedin{
+  height: 50px;
+width: auto;}
+
 /* Navigation bar*/
 
 #navigation {
@@ -115,7 +99,6 @@ p {
   justify-content: space-between;
   padding-top: 10px;
   padding-left: 30px;
-  padding-right: 30px;
 }
 
 #navigation a {
