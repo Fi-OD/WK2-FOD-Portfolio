@@ -23,10 +23,7 @@ p {
   margin: 0;
 }
 
-
-
-/* Header*/
-
+/*Main Grid*/
 
 #mainGrid {
   display: grid;
@@ -35,7 +32,7 @@ p {
   grid-template-rows: 250px 50px 50px 0.5fr 2fr 1fr 0.5fr;
   grid-template-areas:
     ". Pr . I ."
-    ". Na . . ."  
+    ". Na . . ."
     ". N N . ."
     ". A A A ."
     ". H H H ."
@@ -49,7 +46,9 @@ p {
   background-color: rgb(153, 204, 0);
 }
 
-#Profilepic{
+/* header /profile pic and social media icons*/
+
+#Profilepic {
   grid-area: Pr;
   contain: content;
   display: block;
@@ -57,7 +56,7 @@ p {
   padding-top: 20px;
 }
 
-#Profilepic Img{
+#Profilepic Img {
   max-height: 250px;
   filter: grayscale(100%);
 }
@@ -71,7 +70,7 @@ p {
   font-weight: bold;
 }
 
-#socialMediaIcons{
+#socialMediaIcons {
   grid-area: I;
   display: flex;
   justify-self: end;
@@ -80,17 +79,9 @@ p {
   filter: grayscale(100%);
 }
 
-#socialMediaIcons img{
+#socialMediaIcons img {
   padding: 10px;
   height: 100px;
-
-}
-
-#github{
-
-}
-
-#linkedin{
 
 }
 
