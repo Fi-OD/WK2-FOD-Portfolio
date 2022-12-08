@@ -33,7 +33,7 @@ p {
   filter: grayscale(100%);
 }
 
-/* Navigation*/
+/* Header*/
 .header {
   display: flex;
   flex-direction: row;
@@ -66,7 +66,7 @@ p {
   filter: grayscale(100%);
 }
 
-/* Navigation bar*/
+/* Navigation bar
 
 .navBar {
   display: inline-block;
@@ -84,17 +84,17 @@ p {
   color: black;
   font-size: 1.5em;
   font-weight: bold;
-}
+}*/
 
-/*Portfolio Grid*/
+/*Main Grid*/
 
 #mainGrid {
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 100px 1fr 1fr 1fr 100px;
-  grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+  grid-template-columns: 1fr 350px 350px 350px 1fr;
+  grid-template-rows: 50px 0.5fr 2fr 1fr 0.5fr;
   grid-template-areas:
-
+    ". N N . ."
     ". A A A ."
     ". H H H ."
     ". P P P ."
@@ -107,12 +107,34 @@ p {
   background-color: rgb(153, 204, 0);
 }
 
+/* Navigation bar*/
+
+#navigation {
+  grid-area: N;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* About Me Section*/
+
 #about {
   grid-area: A;
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
 }
+
+/*hero project*/
 
 #hero {
   grid-area: H;
@@ -130,6 +152,9 @@ p {
   left: 30px;
   color: white;
 }
+
+
+
 
 /*Portfolio Additional Projects*/
 
