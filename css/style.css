@@ -54,6 +54,7 @@ p {
   contain: content;
   display: block;
   max-height: 250px;
+  padding-top: 20px;
 }
 
 #Profilepic Img{
@@ -73,23 +74,25 @@ p {
 #socialMediaIcons{
   grid-area: I;
   display: flex;
-  justify-content: baseline;
+  justify-self: end;
+  align-self: end;
   cursor: pointer;
   filter: grayscale(100%);
 }
 
 #socialMediaIcons img{
   padding: 10px;
+  height: 100px;
+
 }
 
 #github{
-  height: 50px;
-  width:auto;
+
 }
 
 #linkedin{
-  height: 50px;
-width: auto;}
+
+}
 
 /* Navigation bar*/
 
@@ -97,7 +100,7 @@ width: auto;}
   grid-area: N;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 30px;
 }
 
